@@ -30,8 +30,8 @@ class WeatherTod extends React.Component {
           Temperature
           <span className="weather_data">
             {" "}
-            {parseInt(this.props.data.list[1].main.temp_min-273.15)}&deg; to{" "}
-            {parseInt(this.props.data.list[1].main.temp_max-273.15)}&deg;c
+            {this.props.data.list[1].main.temp_min}&deg; to{" "}
+            {this.props.data.list[1].main.temp_max}&deg;c
           </span>
         </h1>
         <hgroup>

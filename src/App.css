@@ -1,30 +1,29 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-:root{
+:root {
   --clr0: #8229ca;
-  --clr1: #B75CFF;
+  --clr1: #b75cff;
   --clr2: #d2a6f7;
   --clr3: white;
   --clr4: black;
   margin: 0;
-
 }
-body{
+body {
   margin: 0;
 }
 .app {
   transition: background-color 1s ease-in;
-  font-family:Raleway;
-  src: local('https://fonts.googleapis.com/css?family=Raleway&display=swap%27');
+  font-family: Raleway;
+  src: local("https://fonts.googleapis.com/css?family=Raleway&display=swap%27");
   background-color: var(--clr2);
   height: 100%;
 }
 /* .app__header, */
 .app__main {
   display: grid;
-  grid-template-columns: repeat(7,1fr);
+  grid-template-columns: repeat(7, 1fr);
   padding: 10px;
   margin: 0 auto;
   width: calc(100% - 200px);
@@ -35,45 +34,44 @@ body{
 
 /* Current weather */
 
-.weather_pertime{
+.weather_pertime {
   display: flex;
   flex-direction: column;
   align-items: center;
   grid-column: 1fr;
   padding: 50px 0;
 }
-.weather_pertime>*{
+.weather_pertime > * {
   margin: 15px;
 }
-.weather_pertime>h2{
-  font-weight: lighter;;
+.weather_pertime > h2 {
+  font-weight: lighter;
 }
 
-.weather_type{
+.weather_type {
   color: var(--clr3);
 }
-@media  screen and (max-width:1300px){
-  .app__main{
-    grid-template-columns: repeat(4,1fr);
+@media screen and (max-width: 1300px) {
+  .app__main {
+    grid-template-columns: repeat(4, 1fr);
   }
-  .weather_pertime{
+  .weather_pertime {
     grid-column: 1fr;
+  }
 }
-
-}
-@media  screen and (max-width:768px){
-  .weather_pertime{
+@media screen and (max-width: 768px) {
+  .weather_pertime {
     display: flex;
     flex-direction: row;
     align-items: center;
     grid-column: 1/8;
     justify-content: center;
     border-top: solid 1px var(--clr0);
-    padding: 25px 0;  
+    padding: 25px 0;
   }
 
   .app__main {
     width: 90%;
-  width: calc(100% - 10px);
+    width: calc(100% - 10px);
   }
 }

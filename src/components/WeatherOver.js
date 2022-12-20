@@ -39,7 +39,7 @@ class WeatherOver extends React.Component {
       <WeatherPre
         src={imageSrc(element.weather[0].main)}
         time={time(element.dt_txt)}
-        temp={parseInt(element.main.temp - 273)}
+        temp={element.main.temp}
         key={index}
         main={element.weather[0].main}
       />
