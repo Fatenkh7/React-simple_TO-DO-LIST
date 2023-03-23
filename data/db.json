@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "Welcome party1!",
+      "body": "Loren ipsum.1..",
+      "author": "yoshi",
+      "id": 1
+    },
+    {
+      "title": "Welcome party2!",
+      "body": "Loren ipsum.2..",
+      "author": "Faten",
+      "id": 2
+    },
+    {
+      "title": "Welcome party3!",
+      "body": "Loren ipsum.3..",
+      "author": "yoshi",
+      "id": 3
+    }
+  ]
+}
